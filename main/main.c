@@ -12,6 +12,8 @@
 #define HW_BOARD "UNKOWN"
 #endif
 
+// TEST: picocom -b 9600 /dev/ttyUSB1 -p 2
+
 void app_main() {
 	ESP_LOGI("Main", "> Starting in " HW_BOARD "\n");
 	ESP_LOGI("Main", "Init DONE!");
