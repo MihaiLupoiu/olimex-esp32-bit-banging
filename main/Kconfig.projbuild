@@ -1,0 +1,25 @@
+menu "I2S MDB Board"
+
+choice BOARD_SELECT
+    prompt "Select Board"
+
+    help
+        What target are you going to flash.
+    
+    config  P2M_ESP32_DEV_V2 
+        bool "P2M_ESP32_DEV_V2"
+        help
+            Selects ESP32_DEV board version 2.x.        
+            GPIO 25 ->  I2S TX Cable
+            GPIO 26 <- I2S RX Cable
+    config  P2M_ESP32_EVB
+        bool "P2M_ESP32_EVB"
+        help
+            Selects ESP32_EVB board version 1.x.   
+            
+            GPIO 36 ->  I2S TX Cable
+            GPIO 4 <- I2S RX Cable
+
+endchoice
+
+endmenu
