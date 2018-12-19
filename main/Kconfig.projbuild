@@ -1,4 +1,4 @@
-menu "I2S MDB Board"
+menu "Board"
 
 choice BOARD_SELECT
     prompt "Select Board"
